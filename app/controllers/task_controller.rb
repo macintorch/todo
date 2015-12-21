@@ -8,7 +8,7 @@ class TaskController
     Task.all
   end
 
-  def self.task_name(id)
+  def self.task(id)
     task = Task.find(id)
     task[:task]
   end
