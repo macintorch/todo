@@ -4,7 +4,7 @@ require_relative '../app/models/task'
 module TasksImporter
   def self.import
     10.times do |task|
-      task = Task.create(task: Faker::Lorem.word)
+      task = Task.create(task: Faker::Lorem.sentence)
     end
   end
 end

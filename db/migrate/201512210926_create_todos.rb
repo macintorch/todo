@@ -4,6 +4,8 @@
 class CreateTodos < ActiveRecord::Migration
   def change
     	create_table :tasks do |t|
+    	
+    	t.integer :completed
     	t.string :task
     	t.timestamps null: false
     end
